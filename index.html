@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill the following data</p>
+    <form id="survey-form">
+        <label for="name">Name:</label>
+        <input placeholder="enter your name" id="name" type="text" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input placeholder="enter your email" id="email" type="email" name="email" required><br>
+
+        <label for="number">Age:</label>
+        <input placeholder="enter the number" type="number" id="number" name="number" min="0" max="10"><br>
+
+        <label for="gender">Gender:</label>
+        <select id="dropdown" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>
+        </select><br>
+
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label><br>
+
+        <label>Are you a student?</label>
+        <input type="checkbox" name="student" value="yes"> Yes
+        <input type="checkbox" name="student" value="no"> No<br>
+
+        <label for="comment">Add comment</label>
+        <textarea style="vertical-align:middle;" id="comment" name="comment" placeholder="Add comment"></textarea><br>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
